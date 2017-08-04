@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A0F23611F345F2500824D20 /* GlobalQueueOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F23601F345F2500824D20 /* GlobalQueueOperation.m */; };
+		9A0F23781F3470FD00824D20 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F23711F3470FD00824D20 /* AsyncUdpSocket.m */; };
+		9A0F23791F3470FD00824D20 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F23731F3470FD00824D20 /* GCDAsyncUdpSocket.m */; };
+		9A0F237A1F3470FD00824D20 /* IpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F23751F3470FD00824D20 /* IpTool.m */; };
+		9A0F237B1F3470FD00824D20 /* SYUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F23771F3470FD00824D20 /* SYUdpSocket.m */; };
+		9A869A3E1EE0FBC8000B013F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A3D1EE0FBC8000B013F /* main.m */; };
+		9A869A411EE0FBC8000B013F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A401EE0FBC8000B013F /* AppDelegate.m */; };
+		9A869A441EE0FBC8000B013F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A431EE0FBC8000B013F /* ViewController.m */; };
+		9A869A471EE0FBC8000B013F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A869A451EE0FBC8000B013F /* Main.storyboard */; };
+		9A869A491EE0FBC8000B013F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A869A481EE0FBC8000B013F /* Assets.xcassets */; };
+		9A869A4C1EE0FBC8000B013F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A869A4A1EE0FBC8000B013F /* LaunchScreen.storyboard */; };
+		9A869A571EE0FBC8000B013F /* SYUdpSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A561EE0FBC8000B013F /* SYUdpSocketTests.m */; };
+		9A869A621EE0FBC8000B013F /* SYUdpSocketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A869A611EE0FBC8000B013F /* SYUdpSocketUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A869A531EE0FBC8000B013F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A869A311EE0FBC8000B013F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A869A381EE0FBC8000B013F;
+			remoteInfo = SYUdpSocket;
+		};
+		9A869A5E1EE0FBC8000B013F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A869A311EE0FBC8000B013F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A869A381EE0FBC8000B013F;
+			remoteInfo = SYUdpSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A0F235F1F345F2500824D20 /* GlobalQueueOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalQueueOperation.h; sourceTree = "<group>"; };
+		9A0F23601F345F2500824D20 /* GlobalQueueOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalQueueOperation.m; sourceTree = "<group>"; };
+		9A0F23701F3470FD00824D20 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		9A0F23711F3470FD00824D20 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		9A0F23721F3470FD00824D20 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		9A0F23731F3470FD00824D20 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		9A0F23741F3470FD00824D20 /* IpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpTool.h; sourceTree = "<group>"; };
+		9A0F23751F3470FD00824D20 /* IpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpTool.m; sourceTree = "<group>"; };
+		9A0F23761F3470FD00824D20 /* SYUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYUdpSocket.h; sourceTree = "<group>"; };
+		9A0F23771F3470FD00824D20 /* SYUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYUdpSocket.m; sourceTree = "<group>"; };
+		9A869A391EE0FBC8000B013F /* SYUdpSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYUdpSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A869A3D1EE0FBC8000B013F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A869A3F1EE0FBC8000B013F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A869A401EE0FBC8000B013F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A869A421EE0FBC8000B013F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9A869A431EE0FBC8000B013F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9A869A461EE0FBC8000B013F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A869A481EE0FBC8000B013F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A869A4B1EE0FBC8000B013F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A869A4D1EE0FBC8000B013F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A869A521EE0FBC8000B013F /* SYUdpSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYUdpSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A869A561EE0FBC8000B013F /* SYUdpSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYUdpSocketTests.m; sourceTree = "<group>"; };
+		9A869A581EE0FBC8000B013F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A869A5D1EE0FBC8000B013F /* SYUdpSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYUdpSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A869A611EE0FBC8000B013F /* SYUdpSocketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYUdpSocketUITests.m; sourceTree = "<group>"; };
+		9A869A631EE0FBC8000B013F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A869A361EE0FBC8000B013F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A869A4F1EE0FBC8000B013F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A869A5A1EE0FBC8000B013F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A0F236F1F3470FD00824D20 /* SFUdpSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9A0F23701F3470FD00824D20 /* AsyncUdpSocket.h */,
+				9A0F23711F3470FD00824D20 /* AsyncUdpSocket.m */,
+				9A0F23721F3470FD00824D20 /* GCDAsyncUdpSocket.h */,
+				9A0F23731F3470FD00824D20 /* GCDAsyncUdpSocket.m */,
+				9A0F23741F3470FD00824D20 /* IpTool.h */,
+				9A0F23751F3470FD00824D20 /* IpTool.m */,
+				9A0F23761F3470FD00824D20 /* SYUdpSocket.h */,
+				9A0F23771F3470FD00824D20 /* SYUdpSocket.m */,
+			);
+			path = SFUdpSocket;
+			sourceTree = "<group>";
+		};
+		9A869A301EE0FBC8000B013F = {
+			isa = PBXGroup;
+			children = (
+				9A869A3B1EE0FBC8000B013F /* SYUdpSocket */,
+				9A869A551EE0FBC8000B013F /* SYUdpSocketTests */,
+				9A869A601EE0FBC8000B013F /* SYUdpSocketUITests */,
+				9A869A3A1EE0FBC8000B013F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A869A3A1EE0FBC8000B013F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A869A391EE0FBC8000B013F /* SYUdpSocket.app */,
+				9A869A521EE0FBC8000B013F /* SYUdpSocketTests.xctest */,
+				9A869A5D1EE0FBC8000B013F /* SYUdpSocketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A869A3B1EE0FBC8000B013F /* SYUdpSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9A0F236F1F3470FD00824D20 /* SFUdpSocket */,
+				9A869A3F1EE0FBC8000B013F /* AppDelegate.h */,
+				9A869A401EE0FBC8000B013F /* AppDelegate.m */,
+				9A869A421EE0FBC8000B013F /* ViewController.h */,
+				9A869A431EE0FBC8000B013F /* ViewController.m */,
+				9A869A451EE0FBC8000B013F /* Main.storyboard */,
+				9A0F235F1F345F2500824D20 /* GlobalQueueOperation.h */,
+				9A0F23601F345F2500824D20 /* GlobalQueueOperation.m */,
+				9A869A481EE0FBC8000B013F /* Assets.xcassets */,
+				9A869A4A1EE0FBC8000B013F /* LaunchScreen.storyboard */,
+				9A869A4D1EE0FBC8000B013F /* Info.plist */,
+				9A869A3C1EE0FBC8000B013F /* Supporting Files */,
+			);
+			path = SYUdpSocket;
+			sourceTree = "<group>";
+		};
+		9A869A3C1EE0FBC8000B013F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A869A3D1EE0FBC8000B013F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A869A551EE0FBC8000B013F /* SYUdpSocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A869A561EE0FBC8000B013F /* SYUdpSocketTests.m */,
+				9A869A581EE0FBC8000B013F /* Info.plist */,
+			);
+			path = SYUdpSocketTests;
+			sourceTree = "<group>";
+		};
+		9A869A601EE0FBC8000B013F /* SYUdpSocketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A869A611EE0FBC8000B013F /* SYUdpSocketUITests.m */,
+				9A869A631EE0FBC8000B013F /* Info.plist */,
+			);
+			path = SYUdpSocketUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A869A381EE0FBC8000B013F /* SYUdpSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A869A661EE0FBC8000B013F /* Build configuration list for PBXNativeTarget "SYUdpSocket" */;
+			buildPhases = (
+				9A869A351EE0FBC8000B013F /* Sources */,
+				9A869A361EE0FBC8000B013F /* Frameworks */,
+				9A869A371EE0FBC8000B013F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYUdpSocket;
+			productName = SYUdpSocket;
+			productReference = 9A869A391EE0FBC8000B013F /* SYUdpSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A869A511EE0FBC8000B013F /* SYUdpSocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A869A691EE0FBC8000B013F /* Build configuration list for PBXNativeTarget "SYUdpSocketTests" */;
+			buildPhases = (
+				9A869A4E1EE0FBC8000B013F /* Sources */,
+				9A869A4F1EE0FBC8000B013F /* Frameworks */,
+				9A869A501EE0FBC8000B013F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A869A541EE0FBC8000B013F /* PBXTargetDependency */,
+			);
+			name = SYUdpSocketTests;
+			productName = SYUdpSocketTests;
+			productReference = 9A869A521EE0FBC8000B013F /* SYUdpSocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A869A5C1EE0FBC8000B013F /* SYUdpSocketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A869A6C1EE0FBC8000B013F /* Build configuration list for PBXNativeTarget "SYUdpSocketUITests" */;
+			buildPhases = (
+				9A869A591EE0FBC8000B013F /* Sources */,
+				9A869A5A1EE0FBC8000B013F /* Frameworks */,
+				9A869A5B1EE0FBC8000B013F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A869A5F1EE0FBC8000B013F /* PBXTargetDependency */,
+			);
+			name = SYUdpSocketUITests;
+			productName = SYUdpSocketUITests;
+			productReference = 9A869A5D1EE0FBC8000B013F /* SYUdpSocketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A869A311EE0FBC8000B013F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "王声远";
+				TargetAttributes = {
+					9A869A381EE0FBC8000B013F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JPYH2GZ99G;
+						ProvisioningStyle = Automatic;
+					};
+					9A869A511EE0FBC8000B013F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JPYH2GZ99G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A869A381EE0FBC8000B013F;
+					};
+					9A869A5C1EE0FBC8000B013F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JPYH2GZ99G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A869A381EE0FBC8000B013F;
+					};
+				};
+			};
+			buildConfigurationList = 9A869A341EE0FBC8000B013F /* Build configuration list for PBXProject "SYUdpSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A869A301EE0FBC8000B013F;
+			productRefGroup = 9A869A3A1EE0FBC8000B013F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A869A381EE0FBC8000B013F /* SYUdpSocket */,
+				9A869A511EE0FBC8000B013F /* SYUdpSocketTests */,
+				9A869A5C1EE0FBC8000B013F /* SYUdpSocketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A869A371EE0FBC8000B013F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A869A4C1EE0FBC8000B013F /* LaunchScreen.storyboard in Resources */,
+				9A869A491EE0FBC8000B013F /* Assets.xcassets in Resources */,
+				9A869A471EE0FBC8000B013F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A869A501EE0FBC8000B013F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A869A5B1EE0FBC8000B013F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A869A351EE0FBC8000B013F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A869A441EE0FBC8000B013F /* ViewController.m in Sources */,
+				9A0F23781F3470FD00824D20 /* AsyncUdpSocket.m in Sources */,
+				9A0F23611F345F2500824D20 /* GlobalQueueOperation.m in Sources */,
+				9A869A411EE0FBC8000B013F /* AppDelegate.m in Sources */,
+				9A0F23791F3470FD00824D20 /* GCDAsyncUdpSocket.m in Sources */,
+				9A0F237A1F3470FD00824D20 /* IpTool.m in Sources */,
+				9A0F237B1F3470FD00824D20 /* SYUdpSocket.m in Sources */,
+				9A869A3E1EE0FBC8000B013F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A869A4E1EE0FBC8000B013F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A869A571EE0FBC8000B013F /* SYUdpSocketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A869A591EE0FBC8000B013F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A869A621EE0FBC8000B013F /* SYUdpSocketUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A869A541EE0FBC8000B013F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A869A381EE0FBC8000B013F /* SYUdpSocket */;
+			targetProxy = 9A869A531EE0FBC8000B013F /* PBXContainerItemProxy */;
+		};
+		9A869A5F1EE0FBC8000B013F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A869A381EE0FBC8000B013F /* SYUdpSocket */;
+			targetProxy = 9A869A5E1EE0FBC8000B013F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A869A451EE0FBC8000B013F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A869A461EE0FBC8000B013F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A869A4A1EE0FBC8000B013F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A869A4B1EE0FBC8000B013F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A869A641EE0FBC8000B013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A869A651EE0FBC8000B013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A869A671EE0FBC8000B013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JPYH2GZ99G;
+				INFOPLIST_FILE = SYUdpSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SYUdpSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A869A681EE0FBC8000B013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JPYH2GZ99G;
+				INFOPLIST_FILE = SYUdpSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SYUdpSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A869A6A1EE0FBC8000B013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JPYH2GZ99G;
+				INFOPLIST_FILE = SYUdpSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SYUdpSocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYUdpSocket.app/SYUdpSocket";
+			};
+			name = Debug;
+		};
+		9A869A6B1EE0FBC8000B013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JPYH2GZ99G;
+				INFOPLIST_FILE = SYUdpSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SYUdpSocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYUdpSocket.app/SYUdpSocket";
+			};
+			name = Release;
+		};
+		9A869A6D1EE0FBC8000B013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JPYH2GZ99G;
+				INFOPLIST_FILE = SYUdpSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SYUdpSocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SYUdpSocket;
+			};
+			name = Debug;
+		};
+		9A869A6E1EE0FBC8000B013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JPYH2GZ99G;
+				INFOPLIST_FILE = SYUdpSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.SYUdpSocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SYUdpSocket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A869A341EE0FBC8000B013F /* Build configuration list for PBXProject "SYUdpSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A869A641EE0FBC8000B013F /* Debug */,
+				9A869A651EE0FBC8000B013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A869A661EE0FBC8000B013F /* Build configuration list for PBXNativeTarget "SYUdpSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A869A671EE0FBC8000B013F /* Debug */,
+				9A869A681EE0FBC8000B013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A869A691EE0FBC8000B013F /* Build configuration list for PBXNativeTarget "SYUdpSocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A869A6A1EE0FBC8000B013F /* Debug */,
+				9A869A6B1EE0FBC8000B013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A869A6C1EE0FBC8000B013F /* Build configuration list for PBXNativeTarget "SYUdpSocketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A869A6D1EE0FBC8000B013F /* Debug */,
+				9A869A6E1EE0FBC8000B013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A869A311EE0FBC8000B013F /* Project object */;
+}
