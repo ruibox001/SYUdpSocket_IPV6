@@ -79,8 +79,7 @@
         }
         
         int p = [port intValue];
-        self.udpSocket = [[SYUdpSocket alloc] init];
-        [self.udpSocket initUdpSocketWithMyPort:p];
+        self.udpSocket = [[SYUdpSocket alloc] initUdpSocketWithMyPort:p];
         self.udpSocket.delegate = self;
         [self.view endEditing:YES];
         
