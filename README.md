@@ -1,92 +1,47 @@
-# SFHttp
+# SYUdpSocket
 
-[![Build Status](https://travis-ci.org/robbiehanson/CocoaHTTPServer.svg)](https://travis-ci.org/robbiehanson/CocoaHTTPServer)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYKit/master/LICENSE)&nbsp;
+[![CocoaPods](http://img.shields.io/cocoapods/p/YYKit.svg?style=flat)](http://cocoadocs.org/docsets/YYKit)&nbsp;
+[![Build Status](https://travis-ci.org/ibireme/YYKit.svg?branch=master)](https://travis-ci.org/ibireme/YYKit)
 
-一、SFHttp 是基于AFNetworking的封装的网络请求类，主要扩展如下功能：<br>
-1、请求采用链试调用<br>
-2、网络请求内置YYModel的解析模型<br>
-3、自动解析传入的模型并返回<br>
-4、网络变化监听<br>
+iOS-Udp连接库：<br>
+
+>1、封装Udp连接<br>
+>2、IPV6支持<br>
+>3、实例导读<br>
 
 </p>
 
 ---
 
-二、请求代码示例<br>
-1、get请求调用：<br>
+封装了Udp请求类，使用方便，源码开放
 
-            get
-            .url(@"http://www.weather.com.cn/data/sk/101110101.html").addPara(@{@"userId":@"111"})
-            .addPara(@{@"userName":@"222"}).resolve(@"weatherinfo",@"MyModel",^(id model){
-                if ([model isKindOfClass:[MyModel class]]) {
-                    NSLog(@"\n解析返回：%@",model);
-                }
-                else if ([model isKindOfClass:[NSArray class]]){
-                    for (MyModel *p in model) {
-                        NSLog(@"\n数组解析返回：%@",p);
-                    }
-                }
-            }).start();           
+            @class SYUdpSocket;
 
-2、post请求调用：<br>
+            #pragma mark - 代理定义
+            @protocol SYUdpSocketDelegate <NSObject>
+            @optional
 
-            post
-            .url(@"http://www.weather.com.cn/data/sk/101110101.html")
-            .addPara(@{@"userId":@"111"})
-            .addPara(@{@"userName":@"222"})
-            .resolve(@"weatherinfo",@"MyModel",^(id model){
-                if ([model isKindOfClass:[MyModel class]]) {
-                    NSLog(@"\n解析返回：%@",model);
-                }
-                else if ([model isKindOfClass:[NSArray class]]){
-                    for (MyModel *p in model) {
-                        NSLog(@"\n数组解析返回：%@",p);
-                    }
-                }
-            })
-            .start();
+            - (void)udpSocket:(SYUdpSocket *)udpSocket receverData:(NSData *)data remote:(NSString *)address;
 
-三、请求返回信息<br>
-              
-            请求信息:
-            URL: http://www.weather.com.cn/data/sk/101110101.html
-            参数: {
-                userId = 111;
-                userName = 222;
-            }
-            JSON: {
-                "weatherinfo" : {
-                    "temp" : "20",
-                    "time" : "17:00",
-                    "WD" : "西南风",
-                    "qy" : "970",
-                    "isRadar" : "1",
-                    "cityid" : "101110101",
-                    "city" : "西安",
-                    "WS" : "1级",
-                    "WSE" : "1",
-                    "Radar" : "JC_RADAR_AZ9290_JB",
-                    "njd" : "暂无实况",
-                    "SD" : "14%",
-                    "rain" : "0"
-                }
-            }
-            
-            
-解析返回：
+            @end
 
-            17:00 - 西南风 - 西安 - 暂无实况 - 20
+            @interface SYUdpSocket : NSObject
+            #pragma mark - 代理类
+            @property (nonatomic,assign) id <SYUdpSocketDelegate> delegate;
 
+            #pragma mark - 通过本地端口初始化
+            - (instancetype)initUdpSocketWithMyPort:(int)port;
+
+            #pragma mark - 关闭udp
+            - (void)closeUdp;
+
+            #pragma mark - udp发送数据
+            - (void)udpSendDatas:(NSData *)datas ip:(NSString *)ip port:(int)port;
+    
 # 安装
-
-###  CocoaPods
-
-        1. 在 `Podfile` 中添加 `pod 'SFHttp'` <br>
-        2. 执行 `pod install` 或 `pod update`
 
 ### 手动安装
 
-        1. 下载`SFHttp`文件夹内的所有内容。
-        2. 将`SFHttp`内的源文件添加(拖放)到你的工程。
-        
-
+        1. 下载`SYUdpSocket`文件夹内的所有内容。
+        2. 将`SYUdpSocket`内的源文件添加(拖放)到你的工程。
