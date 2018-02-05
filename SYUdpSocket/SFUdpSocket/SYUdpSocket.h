@@ -18,6 +18,7 @@
 
 @class SYUdpSocket;
 
+#pragma mark - 代理定义
 @protocol SYUdpSocketDelegate <NSObject>
 @optional
 
@@ -26,11 +27,16 @@
 @end
 
 @interface SYUdpSocket : NSObject
-
+#pragma mark - 代理类
 @property (nonatomic,assign) id <SYUdpSocketDelegate> delegate;
 
+#pragma mark - 通过本地端口初始化
 - (instancetype)initUdpSocketWithMyPort:(int)port;
+
+#pragma mark - 关闭udp
 - (void)closeUdp;
+
+#pragma mark - udp发送数据
 - (void)udpSendDatas:(NSData *)datas ip:(NSString *)ip port:(int)port;
 
 @end
